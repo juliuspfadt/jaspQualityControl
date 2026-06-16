@@ -16,7 +16,11 @@
 
 # jaspQualityControl (development version)
 
+## Added
+* Process Capability: optional Z.bench (ST) / Z.bench (LT) columns, reporting the sigma level based on the total expected defect probability across both specification limits (matching Minitab's Z.bench), alongside the existing Z (ST) / Z (LT) = 3·Cpk / 3·Ppk.
 
+## Fixed
+* Process Capability: distribution/fit density curves no longer render flat in interactive (plotly) plots; the curves are now drawn with `geom_line` instead of `stat_function`.
 
 ---
 
